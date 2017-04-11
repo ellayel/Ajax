@@ -1,5 +1,3 @@
-Das ist ein Test haha :( haha
-
 <?php
 session_start();
 if(!isset($_SESSION['id'])){
