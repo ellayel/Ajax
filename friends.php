@@ -1,5 +1,4 @@
-Das ist ein Test haha :(
-
+Das ist ein Test haha :( haha
 
 <?php
 session_start();
