@@ -36,7 +36,7 @@ $friend_list = get_friend_list($user_id);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Die drei vorausgehenden meta-Tags *müssen* vor allen anderen Inhalten des head stehen -->
-  <title>p42 - Home</title>
+  <title>United Airline - Freunde schlagen</title>
   <!-- Bootstrap Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->
@@ -56,7 +56,7 @@ $friend_list = get_friend_list($user_id);
           <!-- Wir ersetzen drei waagerechte Striche (Burgermenü) durch Glyphicon -->
           <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
         </button>
-        <a class="navbar-brand" href="#">p42</a>
+        <a class="navbar-brand" href="#">United Airline</a>
       </div>
       <!-- Sichtbarer Inhalt des Menüs -->
       <div class="collapse navbar-collapse" id="p42-navbar">
@@ -64,7 +64,7 @@ $friend_list = get_friend_list($user_id);
           <!-- Der Menüpunkt der aktuellen Seite ist mit class="active" markiert und ist nicht verlinkt -->
           <li class="active"><a href="#">Home</a></li>
           <li><a href="profil.php">Profil</a></li>
-          <li><a href="friends.php">Freunde finden</a></li>
+          <li><a href="friends.php">Freunde schlagen</a></li>
         </ul>
         <!-- rechtsbündiger Inhalt -->
         <ul class="nav navbar-nav navbar-right">
@@ -82,7 +82,7 @@ $friend_list = get_friend_list($user_id);
         <div class="row">
           <div class="col-xs-12">
             <div class="panel panel-default">
-              <div class="panel-heading">Was machst du gerade?</div>
+              <div class="panel-heading">Was schlägst du gerade?</div>
               <div class="panel-body">
                 <!-- Formulare mit Dateiupload benötigen einen speziellen *enctype*
                 http://www.w3schools.com/tags/att_form_enctype.asp -->
@@ -168,7 +168,7 @@ $friend_list = get_friend_list($user_id);
         <!-- Userliste -->
         <form method="post" action="<?PHP echo $_SERVER['PHP_SELF'] ?>" >
           <div class="panel panel-default">
-            <div class="panel-heading">Meine Freunde</div>
+            <div class="panel-heading">Verprügelte Freunde</div>
             <div class="panel-body">
               <?php while($user = mysqli_fetch_assoc($friend_list)) { ?>
                 <div class="row">

@@ -1,7 +1,3 @@
-Test Test TEST !!!
-
-
-
 <?php
   session_start();
   if(isset($_SESSION['id'])) unset($_SESSION['id']);
@@ -72,7 +68,7 @@ Test Test TEST !!!
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Die drei vorausgehenden meta-Tags *müssen* vor allen anderen Inhalten des head stehen -->
-  <title>p42 - Login</title>
+  <title>United Airline - Login</title>
   <!-- Bootstrap Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->

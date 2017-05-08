@@ -76,7 +76,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Die drei vorausgehenden meta-Tags *müssen* vor allen anderen Inhalten des head stehen -->
-  <title>p42 - Profil</title>
+  <title>United Airline - Mein Profil</title>
   <!-- Bootstrap Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->
@@ -95,7 +95,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
           <!-- Wir ersetzen drei waagerechte Striche (Burgermenü) durch Glyphicon -->
           <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
         </button>
-        <a class="navbar-brand" href="#">p42</a>
+        <a class="navbar-brand" href="#">United Airline</a>
       </div>
       <!-- Sichtbarer Inhalt des Menüs -->
       <div class="collapse navbar-collapse" id="p42-navbar">
@@ -103,7 +103,7 @@ $last_update = $update_time['day'] . "." . $update_time['month'] . "." . $update
           <li><a href="home.php">Home</a></li>
           <!-- Der Menüpunkt der aktuellen Seite ist mit class="active" markiert und ist nicht verlinkt -->
           <li class="active"><a href="#">Profil</a></li>
-          <li><a href="friends.php">Freunde finden</a></li>
+          <li><a href="friends.php">Freunde schlagen</a></li>
         </ul>
         <!-- rechtsbündiger Inhalt -->
         <ul class="nav navbar-nav navbar-right">

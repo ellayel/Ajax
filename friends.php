@@ -28,7 +28,7 @@ $friend_list = get_friend_list($user_id);
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>p42 - Freunde finden</title>
+  <title>United Airline - Freunde schlagen</title>
   <!-- Bootstrap Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->
@@ -42,13 +42,13 @@ $friend_list = get_friend_list($user_id);
           <span class="sr-only">Menü anzeigen</span>
           <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
         </button>
-        <a class="navbar-brand" href="#">p42</a>
+        <a class="navbar-brand" href="#">United Airline</a>
       </div>
       <div class="collapse navbar-collapse" id="p42-navbar">
         <ul class="nav navbar-nav">
           <li><a href="home.php">Home</a></li>
           <li><a href="profil.php">Profil</a></li>
-          <li class="active"><a href="#">Freunde finden</a></li>
+          <li class="active"><a href="#">Freunde schlagen</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
@@ -60,7 +60,7 @@ $friend_list = get_friend_list($user_id);
   <div class="container">
 
     <div class="page-header">
-      <h1>alle p42-ler, die noch nicht meine Freunde sind</h1>
+      <h1>alle United Airline Members, die ich noch nicht geschlagen habe.</h1>
     </div>
     <div class="row">
       <div class="col-sm-8"> <!-- Hauptinhalt -->
@@ -118,7 +118,7 @@ $friend_list = get_friend_list($user_id);
 
           <form method="post" action="<?PHP echo $_SERVER['PHP_SELF'] ?>" >
             <div class="panel panel-default">
-              <div class="panel-heading">Meine Freunde</div>
+              <div class="panel-heading">Verprügelte Freunde/div>
               <div class="panel-body" id="friend_list">
                 <?php while($user = mysqli_fetch_assoc($friend_list)) { ?>
                   <!-- Die Klasse my_friend für AJAX-Requests -->
