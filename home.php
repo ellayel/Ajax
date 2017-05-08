@@ -123,7 +123,8 @@ $friend_list = get_friend_list($user_id);
                   <?php  if ($post['img_src']=="0_default_user_image.png"){ ?>
 
                       <img src="user_img/<?php echo $post['img_src']; ?>" attribute: alt="Profilbild" class="img-responsive">
-                    <?php
+                    <?php function myFunction() {
+                        alert("Oh schade! Leider gibt es kein Profilbild.")
                     }
                     else {
                       ?>
