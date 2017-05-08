@@ -182,4 +182,13 @@
 		}
 	}
 
+/* ***************** Alert **************** */
+
+function bild_fehlt() {
+    alert("Oh schade! Leider ist kein Profilbild vorhanden.");
+}
+
+
+
+
 ?>

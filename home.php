@@ -41,6 +41,8 @@ $friend_list = get_friend_list($user_id);
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- eigene Styles -->
   <link rel="stylesheet" href="css/p42_style.css">
+  <!-- Lightbox Stylesheet --->
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.2/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -115,7 +117,21 @@ $friend_list = get_friend_list($user_id);
               <div class="col-xs-2">
                 <div class="thumbnail p42thumbnail">
                   <!-- http://getbootstrap.com/css/#images -->
-                  <img src="user_img/<?php echo $post['img_src']; ?>" alt="Profilbild" class="img-responsive"> <!--W3 Schools Quelle "Lightbox"-->
+
+
+                  <!-- Lightbox --->
+                  <?php  if ($post['img_src']=="0_default_user_image.png"){ ?>
+
+                      <img src="user_img/<?php echo $post['img_src']; ?>" attribute: alt="Profilbild" class="img-responsive">
+                    <?php
+                    }
+                    else {
+                      ?>
+
+
+                      <a href="user_img/<?php echo $post['img_src']; ?>" data-featherlight="image">
+                        <img src="user_img/<?php echo $post['img_src']; ?>" attribute: alt="Profilbild" class="img-responsive"></a> <!-- "FeatherLightbox"-->
+                        <?php  } ?>
                 </div><!-- /thumbnail p42thumbnail -->
               </div><!-- /col-sm-2 -->
 
@@ -197,7 +213,9 @@ $friend_list = get_friend_list($user_id);
   </div> <!-- /container -->
 
   <!-- jQuery (nötig für alle JavaScript-basierten Plugins von BS) -->
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
   <!-- Beinhaltet alle JavaScript-basierten Plugins von BS -->
   <script src="js/bootstrap.min.js"></script>
   <script>
@@ -228,17 +246,29 @@ $friend_list = get_friend_list($user_id);
     };
   });
 
-<!-- Lightbox -->
+// -------------------------------------  Lightbox --------------------------------->
 
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+//    function bildFehlt() {
+//    alert("Oh schade! Leider ist kein Profilbild zum Anzeigen vorhanden.");
+//    }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
+  if (!img_src = "user_img/0_default_user_image.png")
+  $('#force_as_image').featherlight('image')
+  else bildBehlt();
 
-  </script>
+
+// if (document.images["0_default_user_image"]) {bild_fehlt()}
+
+// else {$('#force_as_image').featherlight('image')}
+
+
+
+
+  // Equivalent:
+//  $('#force_as_image').featherlight({type: {image: true}});
+</script>
+
+
 
 </body>
 </html>
