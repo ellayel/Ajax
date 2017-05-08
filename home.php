@@ -115,7 +115,7 @@ $friend_list = get_friend_list($user_id);
               <div class="col-xs-2">
                 <div class="thumbnail p42thumbnail">
                   <!-- http://getbootstrap.com/css/#images -->
-                  <img src="user_img/<?php echo $post['img_src']; ?>" alt="Profilbild" class="img-responsive">
+                  <img src="user_img/<?php echo $post['img_src']; ?>" alt="Profilbild" class="img-responsive"> <!--W3 Schools Quelle "Lightbox"-->
                 </div><!-- /thumbnail p42thumbnail -->
               </div><!-- /col-sm-2 -->
 
@@ -227,6 +227,16 @@ $friend_list = get_friend_list($user_id);
       });
     };
   });
+
+<!-- Lightbox -->
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
 
   </script>
 
