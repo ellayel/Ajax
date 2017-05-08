@@ -60,7 +60,7 @@ $friend_list = get_friend_list($user_id);
   <div class="container">
 
     <div class="page-header">
-      <h1>alle United Airline Members, die ich noch nicht geschlagen habe.</h1>
+      <h1>Alle United Airline Members, die ich noch nicht geschlagen habe.</h1>
     </div>
     <div class="row">
       <div class="col-sm-8"> <!-- Hauptinhalt -->
@@ -118,7 +118,7 @@ $friend_list = get_friend_list($user_id);
 
           <form method="post" action="<?PHP echo $_SERVER['PHP_SELF'] ?>" >
             <div class="panel panel-default">
-              <div class="panel-heading">Verprügelte Freunde/div>
+              <div class="panel-heading">Verprügelte Freunde</div>
               <div class="panel-body" id="friend_list">
                 <?php while($user = mysqli_fetch_assoc($friend_list)) { ?>
                   <!-- Die Klasse my_friend für AJAX-Requests -->
